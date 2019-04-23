@@ -8,60 +8,60 @@ const routes: Routes = [
     component: TabsPage,
     children: [
       {
-        path: 'tab1',
+        path: 'tab-home',
         children: [
           {
             path: '',
-            loadChildren: '../tab1/tab1.module#Tab1PageModule'
+            loadChildren: '../tab-home/tab-home.module#TabHomePageModule'
           }
         ]
       },
       {
-        path: 'tab2',
+        path: 'tab-discovery',
         children: [
           {
             path: '',
-            loadChildren: '../tab2/tab2.module#Tab2PageModule'
+            loadChildren: '../tab-discovery/tab-discovery.module#TabDiscoveryPageModule'
           }
         ]
       },
       {
-        path: 'tab3',
+        path: 'tab-chat',
         children: [
           {
             path: '',
-            loadChildren: '../tab3/tab3.module#Tab3PageModule'
+            loadChildren: '../tab-chat/tab-chat.module#TabChatPageModule'
           }
         ]
       },
       {
-        path: 'tab4',
+        path: 'tab-notification',
         children: [
           {
             path: '',
-            loadChildren: '../tab4/tab4.module#Tab4PageModule'
+            loadChildren: '../tab-notification/tab-notification.module#TabNotificationPageModule'
           }
         ]
       },
       {
-        path: 'tab5',
+        path: 'tab-more',
         children: [
           {
             path: '',
-            loadChildren: '../tab5/tab5.module#Tab5PageModule'
+            loadChildren: '../tab-more/tab-more.module#TabMorePageModule'
           }
         ]
       },
       {
         path: '',
-        redirectTo: '/tabs/tab1',
+        redirectTo: '/tabs/tab-home',
         pathMatch: 'full'
       }
     ]
   },
   {
     path: '',
-    redirectTo: '/tabs/tab1',
+    redirectTo: '/tabs/tab-home',
     pathMatch: 'full'
   }
 ];
