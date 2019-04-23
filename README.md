@@ -1,0 +1,2 @@
+# QAapp
+Ionic project
