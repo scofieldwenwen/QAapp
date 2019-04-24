@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+
+    <ion-buttons slot="start">
+      <ion-buttons>
+        <ion-back-button [defaultHref]="href"></ion-back-button>
+      </ion-buttons>
+    </ion-buttons>
+
+    <ion-title>登录</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content style = "--ion-background-color : #ffffff !important" padding>
+
+  <ion-list>
+    <ion-item >
+        <ion-label position="floating">账号：</ion-label>
+        <!-- placeholder="请输入账号" -->
+        <ion-input type="text" ></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">密码：</ion-label>
+      <ion-input type="password" ></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <ion-button expand = "full" padding> 登录</ion-button>
+
+  <div padding  text-end>
+      <ion-button fill= "clear" size = "small" > 没有账号？注册</ion-button>
+  </div>
+
+
+</ion-content>
